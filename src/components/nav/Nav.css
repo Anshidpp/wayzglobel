@@ -1,0 +1,147 @@
+/* WhatsApp Floating Button */
+.whatsapp-main {
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Navigation Bar */
+.nav-main {
+    width: 100%;
+    height: 85px;
+    background-color: #0e1122;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-logo {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 13rem;
+}
+
+.nav-pages-main {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-pages-main p {
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 17px;
+}
+
+.nav-pages-main p:hover {
+    color: #64a7a6;
+}
+
+.nav-contact {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.nav-contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #2730619c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-main {
+    display: none;
+    font-size: 27px;
+    color: white;
+    align-items: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/* Sliding Menu */
+.slide-menu {
+    position: fixed;
+    top: 80px;
+    right: -260px;
+    width: 250px;
+    height: auto;
+    background-color: #323e84de;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.slide-menu.open {
+    right: 10px;
+}
+
+.slide-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #25d366; */
+    /* padding: 20px; */
+}
+
+.slide-menu-content p {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slide-menu-content p:hover {
+    color: #64a7a6;
+}
+.slide-menu-contact{
+    width: 80%;
+    /* background-color: #0e1122; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+/* Responsive Design */
+@media (max-width: 850px) {
+    .menu-main {
+        display: flex;
+    }
+
+    .nav-contact,
+    .nav-pages-main {
+        display: none;
+    }
+}
