@@ -8,7 +8,7 @@ const services = [
         title: 'Medical Job Placement',
         description: 'We connect doctors, nurses, technicians, and other professionals with top-tier hospitals and clinics.',
         points: [
-            'Doctors (General Physicians, Surgeons, Specialists)',
+            'Doctors (Dental Doctors,General Physicians, Specialists)',
             'Nurses (Registered Nurses, ICU Nurses, Home Nurses)',
             'Lab Technicians, Pharmacists, Radiologists',
             'Permanent, temporary, and contract placements'
